@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public Material skyMat2;
     public Material skyMat3;
 
-
     void Awake()
     {
         if(instance == null)
