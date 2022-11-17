@@ -18,6 +18,13 @@ public class PlatformControllerBoss : MonoBehaviour
     public bool DiezSegundos = true;
     public bool CincoSegundos = true;
 
+    public GameObject bomba;
+    public Transform bombspawn;
+    private bool bomboaBool = true;
+
+
+
+
     void Update()
     {
         MovePlatform();
@@ -32,12 +39,21 @@ public class PlatformControllerBoss : MonoBehaviour
 
             if (moveToTheNext)
             {
+                
                 StopCoroutine(waitForMove(0));
                 platformRB.MovePosition(Vector3.MoveTowards(platformRB.position, platformPositions[nextPosition].position, platformSpeed * Time.deltaTime));
             }
 
             if (Vector3.Distance(platformRB.position, platformPositions[nextPosition].position) <= 0)
             {
+                
+                if (bomboaBool)
+                {
+                    instanciarBomba();
+                    bomboaBool = false;
+                }
+                
+
                 nextPosition = Random.Range(0, platformPositions.Length);
                 StartCoroutine(waitForMove(waitTime));
                 actualPosition = nextPosition;
@@ -67,8 +83,10 @@ public class PlatformControllerBoss : MonoBehaviour
 
     IEnumerator waitForMove(float time)
     {
+        
         moveToTheNext = false;
         yield return new WaitForSeconds(time);
+        bomboaBool = true;
         moveToTheNext = true;
     }
 
@@ -86,6 +104,11 @@ public class PlatformControllerBoss : MonoBehaviour
         yield return new WaitForSeconds(10f);
         CincoSegundos = false;
         DiezSegundos = true;
+    }
+
+    void instanciarBomba()
+    {
+        Instantiate(bomba, bombspawn.position, bombspawn.rotation);
     }
 
 }

@@ -5,17 +5,18 @@ public class LevelChanger : MonoBehaviour
 {
     private int levelToLoad;
     public Animator animator;
+
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    FadeToNextLevel(); //Para pasar al siguiente nivel
-        //}
+        if (DeathZone.muerte)
+        {
+            FadeToNextLevel(); //Para pasar al siguiente nivel
+        }
     }
 
     public void FadeToNextLevel()
     {
-        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void FadeToLevel(int levelIndex)

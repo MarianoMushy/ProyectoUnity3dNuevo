@@ -19,6 +19,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            AudioManager.Instance.Play("campana");
             gm.lastCheckpointPos = transform.position;
             
         }
@@ -26,25 +27,25 @@ public class Checkpoint : MonoBehaviour
         if(checkPointNum == 1)
         {
             GameManager.instance.tiempoActual = 9;
-            RenderSettings.ambientIntensity = 2f;
+            RenderSettings.ambientIntensity = 1.5f;
         }
 
         if (checkPointNum == 2)
         {
             GameManager.instance.tiempoActual = 11;
-            RenderSettings.ambientIntensity = 1.5f;
+            RenderSettings.ambientIntensity = 1.3f;
         }
 
         if (checkPointNum == 3)
         {
             GameManager.instance.tiempoActual = 13;
-            RenderSettings.ambientIntensity = 1.2f;
+            RenderSettings.ambientIntensity = 1.1f;
         }
 
         if (checkPointNum == 4)
         {
             GameManager.instance.tiempoActual = 15;
-            RenderSettings.ambientIntensity = .9f;
+            RenderSettings.ambientIntensity = .8f;
         }
 
         if (checkPointNum == 5)

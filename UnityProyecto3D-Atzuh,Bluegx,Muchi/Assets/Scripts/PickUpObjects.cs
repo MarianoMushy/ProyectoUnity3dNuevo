@@ -15,6 +15,7 @@ public class PickUpObjects : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                AudioManager.Instance.Play("Pickup");
                 pickedObject = objectToPickup;
                 pickedObject.GetComponent<PickableObject>().isPickable = false;
                 pickedObject.transform.SetParent(interactionZone);
@@ -39,7 +40,7 @@ public class PickUpObjects : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                
+                AudioManager.Instance.Play("Pickup");
                 pickedObject.GetComponent<PickableObject>().isPickable = true;
                 pickedObject.transform.SetParent(null);
                 

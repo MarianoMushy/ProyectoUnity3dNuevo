@@ -5,19 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
+    public static bool muerte;
+
+    private bool once = true;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            StartCoroutine(ReloadScene());
+            if (once)
+            {
+                muerte = true; 
+                once = false;
+                StartCoroutine(ReloadScene());
+                
+            }
         }
     }
 
     IEnumerator ReloadScene()
     {
+        AudioManager.Instance.Play("Death");
         ThirdPersonController.anim.SetTrigger("Die");
-        yield return new WaitForSeconds(.7f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(.1f);
+        once = true;
+        muerte = false;
     }
 
 }
