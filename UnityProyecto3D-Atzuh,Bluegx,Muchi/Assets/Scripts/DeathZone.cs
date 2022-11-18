@@ -13,10 +13,14 @@ public class DeathZone : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            
             if (once)
             {
-                muerte = true; 
                 once = false;
+
+                Debug.Log(once);
+                
+
                 StartCoroutine(ReloadScene());
                 
             }
@@ -25,11 +29,11 @@ public class DeathZone : MonoBehaviour
 
     IEnumerator ReloadScene()
     {
+        muerte = true;
         AudioManager.Instance.Play("Death");
         ThirdPersonController.anim.SetTrigger("Die");
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(1f);
         once = true;
         muerte = false;
     }
-
 }

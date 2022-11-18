@@ -10,13 +10,11 @@ public class Bomb : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+
         GameObject _exp = Instantiate(exp, transform.position, transform.rotation);
         Destroy(_exp, 3);
         KnockBack();
         Destroy(gameObject);
-
-
-
 
     }
 
@@ -26,6 +24,8 @@ public class Bomb : MonoBehaviour
 
         foreach (Collider nearby in colliders)
         {
+            
+
             Rigidbody rb = nearby.GetComponent<Rigidbody>();
 
             if(rb != null)

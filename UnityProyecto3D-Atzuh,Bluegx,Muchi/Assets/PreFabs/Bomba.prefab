@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3765198561773526695}
   - component: {fileID: 3765198561773526693}
   - component: {fileID: 3765198561773526698}
-  - component: {fileID: -6634742676903999029}
   - component: {fileID: 2729020985657020310}
   - component: {fileID: 5050611840458809950}
+  - component: {fileID: 1324335657668827102}
   m_Layer: 0
   m_Name: Bomba
   m_TagString: Untagged
@@ -119,18 +119,6 @@ MonoBehaviour:
   exp: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
   expForce: 500
   radius: 500
---- !u!114 &-6634742676903999029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3765198561773526692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c49d5e0f4fc4a04aa8bb41aa8843814, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &2729020985657020310
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -142,8 +130,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2045783
-  m_Center: {x: -0.20620969, y: 0, z: 0.2553947}
+  m_Radius: 1.0750457
+  m_Center: {x: -0.034081466, y: 0, z: 0.2553947}
 --- !u!135 &5050611840458809950
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -157,3 +145,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.50770986
   m_Center: {x: -0.0049117664, y: 0, z: 0}
+--- !u!114 &1324335657668827102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765198561773526692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c49d5e0f4fc4a04aa8bb41aa8843814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

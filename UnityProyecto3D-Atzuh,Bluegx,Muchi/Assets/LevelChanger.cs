@@ -11,7 +11,9 @@ public class LevelChanger : MonoBehaviour
         if (DeathZone.muerte)
         {
             FadeToNextLevel(); //Para pasar al siguiente nivel
+            DeathZone.muerte = false;
         }
+        
     }
 
     public void FadeToNextLevel()
