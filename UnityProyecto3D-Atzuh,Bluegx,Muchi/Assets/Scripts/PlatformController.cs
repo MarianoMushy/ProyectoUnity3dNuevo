@@ -14,20 +14,39 @@ public class PlatformController : MonoBehaviour
     public bool moveToTheNext = true;
     public float waitTime;
 
+
+    [SerializeField] private Vector3 _rotation;
+    [SerializeField] private float _speed;
+
+    bool up = true;
+
+
+
     void Update()
     {
-        MovePlatform();
+        if (moveToTheNext)
+        {
+            MovePlatform();
+        }
+        else
+        {
+            Rotar();
+        }
+        
     }
+
     void MovePlatform()
     {
         if (moveToTheNext)
         {
+            
             StopCoroutine(waitForMove(0));
             platformRB.MovePosition(Vector3.MoveTowards(platformRB.position, platformPositions[nextPosition].position, platformSpeed * Time.deltaTime));
         }
 
         if (Vector3.Distance(platformRB.position, platformPositions[nextPosition].position) <= 0)
         {
+
             //nextPosition = Random.Range(0, platformPositions.Length);
             StartCoroutine(waitForMove(waitTime));
             actualPosition = nextPosition;
@@ -39,10 +58,43 @@ public class PlatformController : MonoBehaviour
             }
         }
     }
+
+    public void Rotar()
+    {
+        if (up)
+        {
+            //transform.Rotate(_rotation * _speed * Time.deltaTime);
+            transform.Rotate(_rotation * -1 * _speed * Time.deltaTime);
+            StartCoroutine(rutinaEspada());
+        }
+        else
+        {
+            StartCoroutine(rutinaEspada2());
+            transform.Rotate(_rotation * _speed * Time.deltaTime);
+            //transform.Rotate(_rotation * -1 * _speed * Time.deltaTime);
+        }
+    }
+
+    IEnumerator rutinaEspada()
+    {
+        up = true;
+        yield return new WaitForSeconds(.5f);
+        up = false;
+    }
+
+    IEnumerator rutinaEspada2()
+    {
+        up = false;
+        yield return new WaitForSeconds(.5f);
+        up = true;
+    }
+
     IEnumerator waitForMove(float time)
     {
+       
         moveToTheNext = false;
         yield return new WaitForSeconds(time);
+        
         moveToTheNext = true;
     }
 }
