@@ -18,7 +18,7 @@ public class DeathZone : MonoBehaviour
             {
                 once = false;
 
-                Debug.Log(once);
+                //Debug.Log(once);
                 
 
                 StartCoroutine(ReloadScene());
