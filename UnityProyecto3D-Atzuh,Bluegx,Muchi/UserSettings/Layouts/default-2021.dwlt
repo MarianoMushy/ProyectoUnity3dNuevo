@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2625
+  controlID: 77
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 2626
+  controlID: 83
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 2627
+  controlID: 84
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -404,26 +404,26 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4650ffffbea3ffff98a4ffff18fbffffc8cd0000e0d200008ed4000040d60000a0d60000
+      scrollPos: {x: 0, y: 208}
+      m_SelectedIDs: daeeffff
+      m_LastClickedID: -4390
+      m_ExpandedIDs: ce85ffffaa8dffff50a7ffff18fbffffde77000002780000807800001e790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: TREE1_PG
+        m_OriginalName: TREE1_PG
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -29270
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -657,9 +657,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 74.45704, y: 2.1789875, z: 225.37993}
+    m_Target: {x: 168.93874, y: -38.56031, z: 350.594}
     speed: 2
-    m_Value: {x: 74.45704, y: 2.1789875, z: 225.37993}
+    m_Value: {x: 168.93874, y: -38.56031, z: 350.594}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -706,13 +706,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.4432317, y: -0.39680526, z: 0.2520904, w: 0.76459175}
+    m_Target: {x: 0.13086638, y: 0.398201, z: -0.0574783, w: 0.90626085}
     speed: 2
-    m_Value: {x: 0.44542682, y: -0.39143205, z: 0.24975942, w: 0.7655037}
+    m_Value: {x: 0.13220549, y: 0.39805406, z: -0.058067057, w: 0.9059265}
   m_Size:
-    m_Target: 55.990005
+    m_Target: 119.878784
     speed: 2
-    m_Value: 56.448322
+    m_Value: 125.52752
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -880,36 +880,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/GAMEFOLDER/MATERIALS_TEXTURES/MATERIALS/COLORS
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/GAMEFOLDER/MATERIALS_TEXTURES/MATERIALS/COLORS
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Usuario\OneDrive\Documentos\ProyectoUnity3D-Atz-Frn-Msh\UnityProyecto3D-Atzuh,Bluegx,Muchi
+  m_LastProjectPath: C:\Users\Alejandro\OneDrive\Documentos\ProyectoUnity3dNuevo\UnityProyecto3D-Atzuh,Bluegx,Muchi
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 117}
-    m_SelectedIDs: e6a60000
-    m_LastClickedID: 42726
-    m_ExpandedIDs: 00000000dca40000dea40000e0a40000e2a40000e4a40000e6a40000e8a40000eaa40000eca40000eea4000000ca9a3b
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: c4ac0000
+    m_LastClickedID: 44228
+    m_ExpandedIDs: 000000004ca7000056a7000074a900007ca9000082a90000baac000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: 3D Assets
+      m_OriginalName: 3D Assets
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 43380
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -923,7 +923,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dca40000dea40000e0a40000e2a40000e4a40000e6a40000e8a40000eaa40000eca40000eea4000000ca9a3b
+    m_ExpandedIDs: 000000004ca70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -950,8 +950,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000dee91000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000000000000dee9100004e00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
