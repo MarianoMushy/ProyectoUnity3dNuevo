@@ -9,14 +9,11 @@ public class Pressurepad : MonoBehaviour
         if(other.tag == "Cube")
         {
             Transform box = other.GetComponent<Transform>();
-            float distance = Vector3.Distance(box.position, transform.position);
-
-            if(distance < 1f)
-            {
-                box.GetComponent<Rigidbody>().isKinematic = true;
-                box.GetComponent<Renderer>().material.color = Color.green;
-                Destroy(box.gameObject, 2f);
-            }
+            
+            box.GetComponent<Rigidbody>().isKinematic = true;
+            box.GetComponent<Renderer>().material.color = Color.green;
+            Destroy(box.gameObject, 2f);
+           
         }
     }
 }
