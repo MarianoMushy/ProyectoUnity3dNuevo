@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
         if (contador <= 0)
         {
-            SceneManager.LoadScene("Nivel1");
+            SceneManager.LoadScene("Blocking");
             //videoPlayer.SetActive(false);
             //canvasVideo.SetActive(false);
             //SceneManager.LoadScene("Nivel1");
