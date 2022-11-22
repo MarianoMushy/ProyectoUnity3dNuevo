@@ -11,10 +11,18 @@ public class Gun : MonoBehaviour
     public float time;
     public float repeatRate;
 
+    public GameObject cubePrefab;
+    public float cubeSpeed;
+
+    public float Cubetime;
+    public float CuberepeatRate;
+
 
     private void Start()
     {
         InvokeRepeating("Shoot", time, repeatRate);
+
+        InvokeRepeating("ShootBlock", Cubetime, CuberepeatRate);
     }
 
 
@@ -31,6 +39,12 @@ public class Gun : MonoBehaviour
     {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up * bulletSpeed;
+    }
+
+    public void ShootBlock()
+    {
+        var bullet = Instantiate(cubePrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up * cubeSpeed;
     }
 
 }
