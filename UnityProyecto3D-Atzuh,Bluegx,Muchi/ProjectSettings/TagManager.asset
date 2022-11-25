@@ -12,6 +12,8 @@ TagManager:
   - Talk
   - GameManager
   - DeathZone
+  - BlueCube
+  - YellowCube
   layers:
   - Default
   - TransparentFX
