@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     public Material skyMat2;
     public Material skyMat3;
 
+
+    [SerializeField] public bool YellowCube = false;
+    [SerializeField] public bool OrangeCube = false;
+    [SerializeField] public bool DarkBlueCube = false;
+
     void Awake()
     {
         if(instance == null)

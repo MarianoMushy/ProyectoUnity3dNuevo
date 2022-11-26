@@ -6,12 +6,16 @@ public class DollTrigger : MonoBehaviour
 {
     public Transform dollSpawnPoint;
     public GameObject doll;
+
+    public static GameObject DollGlobal;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
             Destroy(gameObject);
-            Instantiate(doll, dollSpawnPoint.transform.position,dollSpawnPoint.transform.rotation);
+           DollGlobal = Instantiate(doll, dollSpawnPoint.transform.position,dollSpawnPoint.transform.rotation);
         }
     }
+
+    
 }
