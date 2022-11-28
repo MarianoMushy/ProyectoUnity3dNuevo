@@ -1489,6 +1489,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.68
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2fce4101cafb7034eb5f5c7afcba9412,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fce4101cafb7034eb5f5c7afcba9412, type: 3}
 --- !u!4 &28527395 stripped
@@ -2901,12 +2906,12 @@ PrefabInstance:
     - target: {fileID: 6326920792296582412, guid: 53bba01171eed4e43a958d5f22868c8f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016895918
+      value: 0.000000016895914
       objectReference: {fileID: 0}
     - target: {fileID: 6326920792296582412, guid: 53bba01171eed4e43a958d5f22868c8f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000032538565
+      value: -0.0000000032538556
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53bba01171eed4e43a958d5f22868c8f, type: 3}
@@ -60899,7 +60904,7 @@ GameObject:
   - component: {fileID: 2049858663}
   - component: {fileID: 2049858662}
   - component: {fileID: 2049858661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
