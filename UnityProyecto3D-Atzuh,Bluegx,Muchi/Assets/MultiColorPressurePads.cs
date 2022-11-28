@@ -8,10 +8,7 @@ public class MultiColorPressurePads : MonoBehaviour
 
     public Animator animpuertaRoja;
 
-    
-
-
-
+    public int ID;
 
     private void Start()
     {
@@ -20,7 +17,7 @@ public class MultiColorPressurePads : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "YellowCube")
+        if (other.tag == "YellowCube" && ID == 1)
         {
             Transform box = other.GetComponent<Transform>();
 
@@ -33,7 +30,7 @@ public class MultiColorPressurePads : MonoBehaviour
 
         }
 
-        if (other.tag == "OrangeCube")
+        if (other.tag == "OrangeCube" && ID == 2)
         {
             Transform box = other.GetComponent<Transform>();
 
@@ -46,7 +43,7 @@ public class MultiColorPressurePads : MonoBehaviour
 
         }
 
-        if (other.tag == "DarkBlueCube")
+        if (other.tag == "DarkBlueCube" && ID == 3)
         {
             Transform box = other.GetComponent<Transform>();
 
