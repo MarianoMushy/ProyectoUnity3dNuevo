@@ -53,7 +53,7 @@ public class pauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Debug.Log("LoadMenu");
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void LoadCheckpoint()
