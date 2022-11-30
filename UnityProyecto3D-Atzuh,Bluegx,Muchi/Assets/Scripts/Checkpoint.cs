@@ -61,5 +61,11 @@ public class Checkpoint : MonoBehaviour
             RenderSettings.ambientIntensity = .3f;
         }
 
+        if (checkPointNum == 7)
+        {
+            GameManager.instance.tiempoActual = 22;
+            RenderSettings.ambientIntensity = .1f;
+        }
+
     }
 }
