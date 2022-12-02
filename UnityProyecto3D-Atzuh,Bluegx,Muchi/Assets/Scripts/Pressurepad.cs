@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Pressurepad : MonoBehaviour
 {
+    public GameObject PlatFormController;
+    public GameObject PlatForm;
+    public GameObject exp;
+    
+
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Cube") 
@@ -12,7 +17,11 @@ public class Pressurepad : MonoBehaviour
 
             box.GetComponent<Rigidbody>().isKinematic = true;
             box.GetComponent<Renderer>().material.color = Color.green;
-            Destroy(box.gameObject, 2f);
+            Destroy(box.gameObject, 1f);
+
+            GameObject _exp = Instantiate(exp, PlatForm.transform.position, PlatForm.transform.rotation);
+            Destroy(PlatFormController,1);
+
 
         }
 
