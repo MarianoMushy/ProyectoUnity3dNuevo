@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8980839003430815569}
   - component: {fileID: 8980839003430815582}
   - component: {fileID: 2072327650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EsferaRojaKey
   m_TagString: Sphere
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 8980839004238999469}
   - component: {fileID: 8980839004238999466}
   - component: {fileID: 8980839004238999467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ceb4eb8e3535115428a80ab2bab8fb7c, type: 2}
+  - {fileID: 2100000, guid: b49ea387f54275146aa4906ac8ebb4fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
