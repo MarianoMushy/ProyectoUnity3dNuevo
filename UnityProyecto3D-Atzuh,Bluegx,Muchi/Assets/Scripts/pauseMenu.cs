@@ -54,6 +54,7 @@ public class pauseMenu : MonoBehaviour
     {
         Debug.Log("LoadMenu");
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     public void LoadCheckpoint()

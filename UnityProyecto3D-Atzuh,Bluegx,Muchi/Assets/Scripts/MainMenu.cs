@@ -5,15 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   
     public GameObject videoPlayer;
     public GameObject canvasVideo;
-
     public GameObject cancionIntro;
 
-    public float contador = 120; //cambiar a 102 o los segundos que dure el video
+    [SerializeField] private float contador; //cambiar a 102 o los segundos que dure el video
+   public bool videoActivo = false;
 
-    bool videoActivo = false;
+    private void Awake()
+    {
+        //DontDestroyOnLoad(this);
+
+        videoActivo = false;
+        cancionIntro.SetActive(true);
+        videoPlayer.SetActive(false);
+        canvasVideo.SetActive(false);
+    }
 
     public void exit()
     {
@@ -30,10 +37,9 @@ public class MainMenu : MonoBehaviour
 
         if (contador <= 0)
         {
+            videoActivo=false;
+            contador = 6;
             SceneManager.LoadScene("Blocking");
-            //videoPlayer.SetActive(false);
-            //canvasVideo.SetActive(false);
-            //SceneManager.LoadScene("Nivel1");
         }
 
     }
