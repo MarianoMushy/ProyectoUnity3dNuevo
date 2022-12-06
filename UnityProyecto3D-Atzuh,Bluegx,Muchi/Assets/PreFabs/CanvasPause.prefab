@@ -191,6 +191,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8547905059364313004}
     m_Modifications:
+    - target: {fileID: 4464064002653350607, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 75.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464064002653350607, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
+    - target: {fileID: 4464064002653350607, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -224345008024805309, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
     - target: {fileID: 4464064002667386541, guid: 156d0829ad51afb45a45c0f2548d93d3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -206,6 +223,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8547905059364313007}
+    - target: {fileID: 4464064004312528747, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 135.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464064004312528747, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
+    - target: {fileID: 4464064004312528747, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -224345008024805309, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
     - target: {fileID: 4464064004527292912, guid: 156d0829ad51afb45a45c0f2548d93d3,
         type: 3}
       propertyPath: m_Pivot.x
@@ -321,6 +355,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8547905058349964764, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 36.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547905058349964764, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
+    - target: {fileID: 8547905058349964764, guid: 156d0829ad51afb45a45c0f2548d93d3,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -224345008024805309, guid: 1bc6285d576fd20429826358a29556ee,
+        type: 2}
     - target: {fileID: 8547905058377315906, guid: 156d0829ad51afb45a45c0f2548d93d3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
