@@ -23,11 +23,11 @@ public class LevelChanger : MonoBehaviour
             //SceneManager.LoadScene("BossFightTest");
         }
 
-        if (Pressurepad.BossTriggerPhase2Bool)
+        if (PressurePadPhase2.BossTriggerPhase2Bool)
         {
             //DeathZone.muerte = true;
             FadeToNextLevelBossPhase2();
-            Pressurepad.BossTriggerPhase2Bool = false;
+            PressurePadPhase2.BossTriggerPhase2Bool = false;
             //SceneManager.LoadScene("BossFightTest");
         }
 
@@ -46,7 +46,7 @@ public class LevelChanger : MonoBehaviour
 
     public void FadeToNextLevelBossPhase2()
     {
-        FadeToLevel(SceneManager.GetActiveScene().buildIndex +1);
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 
 
