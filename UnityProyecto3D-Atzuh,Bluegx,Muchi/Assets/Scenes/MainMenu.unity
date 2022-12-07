@@ -623,6 +623,10 @@ MonoBehaviour:
   cancionIntro: {fileID: 1484312353}
   contador: 12
   videoActivo: 0
+  CreditsvideoPlayer: {fileID: 0}
+  CreditscanvasVideo: {fileID: 0}
+  contadorCredits: 24
+  videoActivoCredits: 0
 --- !u!4 &900742604
 Transform:
   m_ObjectHideFlags: 0

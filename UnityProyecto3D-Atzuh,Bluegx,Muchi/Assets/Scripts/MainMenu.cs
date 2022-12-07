@@ -10,12 +10,10 @@ public class MainMenu : MonoBehaviour
     public GameObject cancionIntro;
 
     [SerializeField] private float contador; //cambiar a 102 o los segundos que dure el video
-   public bool videoActivo = false;
+    public bool videoActivo = false;
 
     private void Awake()
     {
-        //DontDestroyOnLoad(this);
-
         videoActivo = false;
         cancionIntro.SetActive(true);
         videoPlayer.SetActive(false);
@@ -34,14 +32,12 @@ public class MainMenu : MonoBehaviour
             contador -= Time.deltaTime;
         }
 
-
         if (contador <= 0)
         {
             videoActivo=false;
-            contador = 6;
+            contador = 12;
             SceneManager.LoadScene("Blocking");
         }
-
     }
 
     public void EmpezarVideo()
