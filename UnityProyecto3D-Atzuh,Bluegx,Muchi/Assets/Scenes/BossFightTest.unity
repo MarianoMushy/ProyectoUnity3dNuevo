@@ -5565,7 +5565,7 @@ MonoBehaviour:
   - {fileID: 1860685804}
   - {fileID: 299883898}
   downPos: {fileID: 880475177}
-  platformSpeed: 80
+  platformSpeed: 5
   waitTime: 0.5
   DiezSegundos: 1
   CincoSegundos: 1
@@ -7251,11 +7251,11 @@ MonoBehaviour:
   - {fileID: 1472993176}
   - {fileID: 1528671279}
   - {fileID: 655286692}
-  platformSpeed: 100
+  platformSpeed: 5
   moveToTheNext: 1
-  waitTime: 1
+  waitTime: 0.5
   _rotation: {x: 1, y: 0, z: 0}
-  _speed: 100
+  _speed: 50
 --- !u!4 &1240302272
 Transform:
   m_ObjectHideFlags: 0
@@ -9095,7 +9095,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712103037}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1712103040
 Camera:
   m_ObjectHideFlags: 0
