@@ -54,10 +54,10 @@ public class PlatformPhase2 : MonoBehaviour
 
             if (Vector3.Distance(platformRB.position, platformPositions[nextPosition].position) <= 0)
             {
-                nextPosition = Random.Range(0, platformPositions.Length);
+                //nextPosition = Random.Range(0, platformPositions.Length);
                 StartCoroutine(waitForMove(waitTime));
                 actualPosition = nextPosition;
-                //nextPosition++;
+                nextPosition++;
 
                 if (nextPosition > platformPositions.Length - 1)
                 {

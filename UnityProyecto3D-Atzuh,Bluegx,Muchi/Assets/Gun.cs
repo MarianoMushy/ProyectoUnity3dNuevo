@@ -39,6 +39,7 @@ public class Gun : MonoBehaviour
     {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up * bulletSpeed;
+        
             AudioManager.Instance.Play("Spit");
     }
 
@@ -46,6 +47,7 @@ public class Gun : MonoBehaviour
     {
         var bullet = Instantiate(cubePrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up * cubeSpeed;
+        Destroy(bullet, 10);
     }
 
 }
