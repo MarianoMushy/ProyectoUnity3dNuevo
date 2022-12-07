@@ -10,7 +10,7 @@ public class Bomb : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-
+        AudioManager.Instance.Play("Explosion");
         GameObject _exp = Instantiate(exp, transform.position, transform.rotation);
         Destroy(_exp, 3);
         KnockBack();

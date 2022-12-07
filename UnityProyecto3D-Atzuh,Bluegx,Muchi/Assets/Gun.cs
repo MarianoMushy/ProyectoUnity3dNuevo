@@ -47,7 +47,7 @@ public class Gun : MonoBehaviour
     {
         var bullet = Instantiate(cubePrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up * cubeSpeed;
-        Destroy(bullet, 10);
+        Destroy(bullet, 30);
     }
 
 }

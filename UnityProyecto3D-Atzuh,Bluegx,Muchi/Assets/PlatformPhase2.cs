@@ -6,7 +6,6 @@ public class PlatformPhase2 : MonoBehaviour
 {
     public Rigidbody platformRB;
     public Transform[] platformPositions;
-    public Transform downPos;
     public float platformSpeed;
 
     private int actualPosition = 0;
@@ -15,23 +14,15 @@ public class PlatformPhase2 : MonoBehaviour
     private bool moveToTheNext = true;
     public float waitTime;
 
-    public bool DiezSegundos = true;
-    public bool CincoSegundos = true;
-
-
     [SerializeField] private Vector3 _rotation;
     [SerializeField] private float _speed;
     bool up = true;
 
     void Update()
     {
-        //MovePlatform();
-        //MovePlatDown();
-
         if (moveToTheNext)
         {
             MovePlatform();
-            MovePlatDown();
         }
         else
         {
@@ -41,13 +32,8 @@ public class PlatformPhase2 : MonoBehaviour
 
     void MovePlatform()
     {
-        if (DiezSegundos)
-        {
-            StartCoroutine(DiezSegundosRutina());
-
             if (moveToTheNext)
             {
-
                 StopCoroutine(waitForMove(0));
                 platformRB.MovePosition(Vector3.MoveTowards(platformRB.position, platformPositions[nextPosition].position, platformSpeed * Time.deltaTime));
             }
@@ -64,27 +50,13 @@ public class PlatformPhase2 : MonoBehaviour
                     nextPosition = 0;
                 }
             }
-        }
-    }
-
-    void MovePlatDown()
-    {
-        if (DiezSegundos == false)
-        {
-            if (CincoSegundos == true)
-            {
-
-                StartCoroutine(CincoSegundosRutina());
-
-            }
-        }
+        
     }
 
     public void Rotar()
     {
         if (up)
         {
-            //transform.Rotate(_rotation * _speed * Time.deltaTime);
             transform.Rotate(_rotation * -1 * _speed * Time.deltaTime);
             StartCoroutine(rutinaEspada());
         }
@@ -92,21 +64,20 @@ public class PlatformPhase2 : MonoBehaviour
         {
             StartCoroutine(rutinaEspada2());
             transform.Rotate(_rotation * _speed * Time.deltaTime);
-            //transform.Rotate(_rotation * -1 * _speed * Time.deltaTime);
         }
     }
 
     IEnumerator rutinaEspada()
     {
         up = true;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(3f);
         up = false;
     }
 
     IEnumerator rutinaEspada2()
     {
         up = false;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(3f);
         up = true;
     }
 
@@ -116,21 +87,5 @@ public class PlatformPhase2 : MonoBehaviour
         moveToTheNext = false;
         yield return new WaitForSeconds(time);
         moveToTheNext = true;
-    }
-
-    IEnumerator DiezSegundosRutina()
-    {
-        yield return new WaitForSeconds(10f);
-        DiezSegundos = false;
-        CincoSegundos = true;
-
-    }
-
-    IEnumerator CincoSegundosRutina()
-    {
-        platformRB.MovePosition(Vector3.MoveTowards(platformRB.position, downPos.position, platformSpeed * Time.deltaTime));
-        yield return new WaitForSeconds(10f);
-        CincoSegundos = false;
-        DiezSegundos = true;
     }
 }

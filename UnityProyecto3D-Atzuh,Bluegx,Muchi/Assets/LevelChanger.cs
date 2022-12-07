@@ -12,6 +12,9 @@ public class LevelChanger : MonoBehaviour
         {
             FadeToNextLevel(); //Para pasar al siguiente nivel
             DeathZone.muerte = false;
+            GameManager.instance.YellowCube = false;
+            GameManager.instance.OrangeCube = false;
+            GameManager.instance.DarkBlueCube = false;
         }
 
 
@@ -46,7 +49,7 @@ public class LevelChanger : MonoBehaviour
 
     public void FadeToNextLevelBossPhase2()
     {
-        FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex +1);
     }
 
 

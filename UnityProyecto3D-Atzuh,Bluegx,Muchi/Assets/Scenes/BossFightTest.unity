@@ -11184,26 +11184,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1416764879164169230, guid: 0833af43f44e01343b2b03e27d7b5141,
-        type: 3}
-      propertyPath: sonido.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416764879164169230, guid: 0833af43f44e01343b2b03e27d7b5141,
-        type: 3}
-      propertyPath: sonido.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: dec84f93b25650446b4480c15219efd9, type: 3}
-    - target: {fileID: 1416764879164169230, guid: 0833af43f44e01343b2b03e27d7b5141,
-        type: 3}
-      propertyPath: sonido.Array.data[6].nombre
-      value: Spit
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416764879164169230, guid: 0833af43f44e01343b2b03e27d7b5141,
-        type: 3}
-      propertyPath: sonido.Array.data[6].volumen
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1416764879164169231, guid: 0833af43f44e01343b2b03e27d7b5141,
         type: 3}
       propertyPath: m_RootOrder

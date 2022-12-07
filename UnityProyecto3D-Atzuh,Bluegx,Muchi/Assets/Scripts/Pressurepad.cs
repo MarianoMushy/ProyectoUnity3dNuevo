@@ -23,6 +23,7 @@ public class Pressurepad : MonoBehaviour
             Destroy(box.gameObject, 1f);
 
             GameObject _exp = Instantiate(exp, PlatForm.transform.position, PlatForm.transform.rotation);
+            AudioManager.Instance.Play("Explosion");
             Destroy(PlatFormController,1);
 
 
@@ -34,7 +35,7 @@ public class Pressurepad : MonoBehaviour
 
     IEnumerator bossFight()
     {
-        yield return new WaitForSeconds(.9f);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("BossFightTest2");
         GameManager.instance.lastCheckpointPos.x = 18;
         GameManager.instance.lastCheckpointPos.y = 1;
