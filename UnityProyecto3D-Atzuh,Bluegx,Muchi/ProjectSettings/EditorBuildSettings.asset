@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFightTest.unity
     guid: adffd3bb17bd2b54486bdf42f1275a2f
+  - enabled: 1
+    path: Assets/Scenes/BossFightTest2.unity
+    guid: 5712ecd6d79d81a4eb4b9f8cd411f30f
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: af63bdf32663c454fbb0295986f8971e
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05

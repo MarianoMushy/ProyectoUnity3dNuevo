@@ -75,3 +75,8 @@ MonoBehaviour:
     volumen: 1
     loop: 0
     source: {fileID: 0}
+  - nombre: Spit
+    clip: {fileID: 8300000, guid: dec84f93b25650446b4480c15219efd9, type: 3}
+    volumen: 0.3
+    loop: 0
+    source: {fileID: 0}

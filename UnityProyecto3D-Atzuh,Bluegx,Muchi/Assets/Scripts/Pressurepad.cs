@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pressurepad : MonoBehaviour
 {
     public GameObject PlatFormController;
     public GameObject PlatForm;
     public GameObject exp;
-    
+
+    public static bool BossTriggerPhase2Bool = false;
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -23,8 +26,20 @@ public class Pressurepad : MonoBehaviour
             Destroy(PlatFormController,1);
 
 
-        }
+            BossTriggerPhase2Bool = true;
+            StartCoroutine("bossFight");
 
-        
+        }
     }
+
+    IEnumerator bossFight()
+    {
+        yield return new WaitForSeconds(.9f);
+        SceneManager.LoadScene("BossFightTest2");
+        GameManager.instance.lastCheckpointPos.x = 18;
+        GameManager.instance.lastCheckpointPos.y = 1;
+        GameManager.instance.lastCheckpointPos.z = -23.5f;
+    }
+
+
 }
