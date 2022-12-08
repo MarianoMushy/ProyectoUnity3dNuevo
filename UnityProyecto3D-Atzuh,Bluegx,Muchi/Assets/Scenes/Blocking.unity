@@ -46000,36 +46000,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: skyMat1
-      value: 
-      objectReference: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: skyMat2
-      value: 
-      objectReference: {fileID: 2100000, guid: e2341a9d03e86ec4290c72b1e22bbc7c, type: 2}
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: skyMat3
-      value: 
-      objectReference: {fileID: 2100000, guid: aa276ed2be5343ab89b6523279f9747e, type: 2}
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: lastCheckpointPos.x
-      value: -21
-      objectReference: {fileID: 0}
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: lastCheckpointPos.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3003957710772832424, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
-        type: 3}
-      propertyPath: lastCheckpointPos.z
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3003957710772832425, guid: b2a3c774c5536ed4091cb7bb4a84ad59,
         type: 3}
       propertyPath: m_RootOrder

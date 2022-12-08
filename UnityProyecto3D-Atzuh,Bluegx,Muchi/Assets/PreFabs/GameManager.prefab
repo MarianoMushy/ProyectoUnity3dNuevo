@@ -44,4 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf596eee8fff654d945e6b82a3f18c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckpointPos: {x: 0, y: 0, z: 0}
+  lastCheckpointPos: {x: -21, y: 5, z: 3}
+  tiempoActual: 0
+  skyMat1: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
+  skyMat2: {fileID: 2100000, guid: e2341a9d03e86ec4290c72b1e22bbc7c, type: 2}
+  skyMat3: {fileID: 2100000, guid: aa276ed2be5343ab89b6523279f9747e, type: 2}
+  YellowCube: 0
+  OrangeCube: 0
+  DarkBlueCube: 0
