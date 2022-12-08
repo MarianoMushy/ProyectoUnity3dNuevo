@@ -42,6 +42,9 @@ public class MainMenu : MonoBehaviour
 
     public void EmpezarVideo()
     {
+        GameManager.instance.lastCheckpointPos.x = -21;
+        GameManager.instance.lastCheckpointPos.y = 5;
+        GameManager.instance.lastCheckpointPos.z = 3;
         videoActivo = true;
         cancionIntro.SetActive(false);
         videoPlayer.SetActive(true);
